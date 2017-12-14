@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Gear Hungry</title>
-    <style>
-      body { background-color: #F2F6D0 }
-      #wrapper {
-        width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5%;
-      }
-      #articles {
-        display: inline-block;
-        overflow: auto;
-        width: 60%;
-        height: 700px;
-      }
-      #notes {
-        float: right;
-        width: 30%;
-      }
-      textarea, input {
-        display: block;
-        width: 100%;
-        background-color: #FCF5C7;
-      }
-      input {
-        height: 36px;
-        font-size: 24px;
-      }
-      textarea {
-        height: 200px;
-        font-size: 18px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="wrapper">
-      <h1>Note Scraper</h1>
-      <h2><i>If you can do this...the homework should be no problem.</i></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gear Hungry</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.png"/>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css"> 
+
+</head>
+
+<body>
+
+	<!-- Header --> 
+	<div class="col-md-12">
+		<div class="row">
+			<header class="header">
+		   		Gear Hungry
+			</header>
+		</div>
+	</div>
+
+	<!-- Actual Body --> 
+	<div class="container">
+
+
+		<!--Articles Area--> 
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="panel-title" id="searchID">Your Articles</div> 
+				</div>
+
+				<div class="panel-body">
+
+					<!-- Articles get dropped here --> 
+					<div id="articles"></div>
+      				<div id="notes"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer --> 
+	<div class="col-md-12">
+		<div class="row">
+			<footer class="footer">
+		   		© Copyright 2017 Daniel Ryne Lucio
+			</footer>
+		</div>
+	</div>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- my JavaScript File -->
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
+   
+
+</body>
 </html>

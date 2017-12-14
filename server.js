@@ -12,6 +12,7 @@ var cheerio = require("cheerio");
 // Require all models
 var db = require("./models");
 
+// Define port to use the local environment or on 3000
 var PORT = process.env.PORT || 3000;
 
 // Initialize Express
@@ -35,8 +36,6 @@ mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
   useMongoClient: true
 });
-
-
 
 // Routes
 
