@@ -23,6 +23,7 @@
 		<div class="row">
 			<header class="header">
 		   		Gear Hungry
+		   		<button type="button" class="btn btn-secondary" id="refresh">Refresh Articles</button>
 			</header>
 		</div>
 	</div>
@@ -30,18 +31,32 @@
 	<!-- Actual Body --> 
 	<div class="container">
 
-
 		<!--Articles Area--> 
-		<div class="col-md-12">
+		<div class="col-md-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<div class="panel-title" id="searchID">Your Articles</div> 
+					<div class="panel-title">Articles</div> 
 				</div>
 
 				<div class="panel-body">
 
 					<!-- Articles get dropped here --> 
 					<div id="articles"></div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--Notes Area--> 
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="panel-title">Notes</div> 
+				</div>
+
+				<div class="panel-body">
+
+					<!-- Notes get dropped here --> 
       				<div id="notes"></div>
 
 				</div>
@@ -49,6 +64,7 @@
 		</div>
 	</div>
 
+	
 	<!-- Footer --> 
 	<div class="col-md-12">
 		<div class="row">

@@ -39,7 +39,7 @@ mongoose.connect(MONGODB_URI, {
 
 // Routes
 
-// A GET route for scraping the echojs website
+// A GET route for scraping the website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
   axios.get("http://gearpatrol.com/").then(function(response) {
@@ -120,6 +120,21 @@ app.post("/articles/:id", function(req, res) {
     .then(function(dbArticle) {
       // If we were able to successfully update an Article, send it back to the client
       res.json(dbArticle);
+    })
+    .catch(function(err) {
+      // If an error occurred, send it to the client
+      res.json(err);
+    });
+});
+
+// Route for deleting the article 
+app.delete("/articles/:id", function(req, res) {
+  // Using the id passed in the id parameter, prepare a query that finds the matching one in our db...
+  db.Article
+    .remove({ _id: req.params.id })
+    .then(function() {
+      // If we were able to successfully find an Article with the given id, send it back to the client
+      res.json(req.params.id);
     })
     .catch(function(err) {
       // If an error occurred, send it to the client

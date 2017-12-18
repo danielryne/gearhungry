@@ -1,8 +1,4 @@
 
-* {
-  text-align: center;
-}
-
 header {
   width: 100%;
   height: 125px;
@@ -11,27 +7,27 @@ header {
   font-size: 75px; 
   float: bottom;
   background-color: black;
+  text-align: center;
+}
+
+#refresh {
+  color: black; 
+}
+
+#refresh:hover {
+  color: grey;
+}
+
+.panel-default{
+  float: left;
 }
 
 .panel-title {
   font-size: 20px;
   color: gray;
+  text-align: center;
   }
 
-.panel-body {
-  color: gray; 
-}
-
-#articles {
-  display: inline-block;
-  overflow: auto;
-  width: 60%;
-  height: 700px;
-}
-#notes {
-  float: right;
-  width: 30%;
-}
 textarea, input {
   display: block;
   width: 100%;
@@ -46,17 +42,11 @@ textarea {
   font-size: 18px;
 }
 
-/*button {
-  width: 80%;
-  color: white; 
-  margin: 3px; 
-  background-color: black;
-}*/
-
 footer {
     width: 100%;
     height: 60px;
     padding: 20px;
     color: white;
     background-color: black;
+    text-align: center;
   }
